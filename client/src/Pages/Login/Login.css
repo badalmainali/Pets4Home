@@ -1,0 +1,34 @@
+
+.logins
+{
+    align-items: center !important;
+    margin: 5% 5% !important;
+  
+    background-image: linear-gradient( 95.2deg, rgb(149, 236, 216) 26.8%, rgb(142, 197, 223) 64% ) !important;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+
+.login-right
+{
+    margin-left: 8% !important;
+    
+}
+
+
+.inpt
+{
+    background: transparent !important;
+}
+
+.lgn-inpt
+{
+   margin-left: 12.6rem !important;
+}
+
+.groups {
+    position: relative;
+    margin-bottom: 45px;
+    
+}
+

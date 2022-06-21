@@ -1,0 +1,24 @@
+.deer {
+    border-radius: 246px 383px 214px 261px;
+    max-width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+
+.started {
+    color: white;
+    font-size: 40px;
+    font-family: 'Nunito' !important
+   
+}
+
+.About {
+    color: white;
+    font-size: 25px;
+    margin-top: 10px;
+   
+}
+
+.deerText {
+margin-left: 30px;
+}
