@@ -2,14 +2,14 @@ import React,{useState} from "react";
 import { Form, Button, Row, Col, Image, Container } from "react-bootstrap";
 
 const FormDetails = () => {
-    const [data,setData]=useState({
-        "name":"",
-        "email":"",
-        "phone":"",
-        "address":"",
-        "sex":"",
-        "date":"",
-    });
+    // const [data,setData]=useState({
+    //     "name":"",
+    //     "email":"",
+    //     "phone":"",
+    //     "address":"",
+    //     "sex":"",
+    //     "date":"",
+    // });
   return (
     <Container>
       <Row className="mt-5 justify-content-center">

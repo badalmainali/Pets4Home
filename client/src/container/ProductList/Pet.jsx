@@ -5,10 +5,11 @@ import Card from "@mui/material/Card";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Grid } from "@mui/material";
+import './Cards.css'
 
 const Product = ({ product }) => {
   return (
-    <Card
+    <Card className="cards"
       key={product._id}
       sx={{ maxWidth: 300 }}
       style={{
@@ -21,8 +22,8 @@ const Product = ({ product }) => {
         to={`/pet/${product._id}`}
         style={{ textDecoration: "none", color: "black" }}
       >
-        <CardMedia
-          style={{ borderRadius: "20px", width: "280px", height: "240px" }}
+        <CardMedia className="card-img"
+         
           component="img"
           image={product.image}
           alt="Dog"
@@ -31,14 +32,15 @@ const Product = ({ product }) => {
         <Typography
           align="center"
           gutterBottom
-          style={{ fontSize: "25px", fontWeight: "600" }}
+          style={{ fontSize: "18px", fontWeight: "600" }}
         >
-          {product.name}
+          Name : <span>{product.name}</span>
         </Typography>
       </Link>
 
       <Grid sx={{ textAlign: "center" }}>
-        <h4>Rs.{product.price}</h4> <Rating value={product.rating} readOnly />
+        <h4 className="price">Price : Rs.{product.price}</h4>
+         <Rating value={product.rating}  />
       </Grid>
     </Card>
   );

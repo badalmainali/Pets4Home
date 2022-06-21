@@ -2,6 +2,12 @@ import React from "react";
 import { Grid } from "@mui/material";
 import styles from "./styles.module.css";
 
+import AOS from 'aos';
+
+import 'aos/dist/aos.css'; 
+// ..
+AOS.init();
+
 const Heading = () => {
   return (
     <Grid
@@ -16,7 +22,7 @@ const Heading = () => {
       className={styles.heading}
     >
       <Grid item>
-        <div style={{display:'flex',flexDirection:'column'}}>
+        <div data-aos="zoom-out-down" data-aos-duration="1500" style={{display:'flex',flexDirection:'column'}}>
           <p className={styles.house}>
             Not only People <br/><span className={styles.span}>Need a house</span>
           </p>
@@ -24,7 +30,8 @@ const Heading = () => {
         </div>
       </Grid>
 
-      <img
+      <img data-aos="fade-up"
+     data-aos-anchor-placement="bottom-bottom"  data-aos-duration="1500"
         src="/images/dog.svg"
         style={{ maxWidth: "100%" }}
         className={styles.image}
